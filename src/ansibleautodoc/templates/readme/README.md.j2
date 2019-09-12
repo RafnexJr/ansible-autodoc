@@ -24,7 +24,7 @@
 {#      Author information      #}
 {% if r.get_item("meta","author") %}
 ## Author Information
-This {%  if r.is_role() %}role:{% else %}playbook{% endif %}  was created by: {{ r.capitalize(r.get_item("meta","author").value) }}
+This {%  if r.is_role() %}role{% else %}playbook{% endif %} was created by: {{ r.capitalize(r.get_item("meta","author").value) }}
 {% if r.get_item("meta","email")  %}{{ r.capitalize(r.get_item("meta","email").value) }}{% endif %}
 {% endif %}
 
