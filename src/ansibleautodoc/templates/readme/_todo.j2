@@ -3,7 +3,7 @@
     {% if key == "_unset_" %}
 #### Without section:
     {% for item in values %}
-* {{ item.desc }} {% if not r.is_role() %}({{ r.fprn(item.role) }}){% endif %}
+- [ ] {{ item.desc }} {% if not r.is_role() %}({{ r.fprn(item.role) }}){% endif %}
 
     {% endfor %}
     {% endif %}
@@ -13,7 +13,7 @@
     {% if key != "_unset_" %}
 #### {{ r.capitalize(key) }}:
         {% for item in values %}
-* {% if item.value %}{{ item.value }} - {% endif %}{{ item.desc }} {% if not r.is_role() %}({{ r.fprn(item.role) }}){% endif %}
+- [ ] {% if item.value %}{{ item.value }} - {% endif %}{{ item.desc }} {% if not r.is_role() %}({{ r.fprn(item.role) }}){% endif %}
 
         {% endfor %}
     {%  endif %}
