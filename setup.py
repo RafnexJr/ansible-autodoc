@@ -7,7 +7,6 @@ import glob
 sys.path.insert(0, os.path.abspath('src'))
 from ansibleautodoc import __version__
 
-
 try:
     from setuptools import setup, find_packages,Command
 except ImportError:
@@ -78,6 +77,4 @@ setup(
         'src/bin/ansible-autodoc',
     ],
     cmdclass=cmd_classes,
-
 )
-

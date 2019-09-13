@@ -1,5 +1,5 @@
 # {%  if r.is_role() %}Ansible Role:{% endif %} {% if r.get_item("meta","name") %}{{ r.get_item("meta","name").value }}
-{% else %}{{  r.get_name() }}{% endif %}
+{% else %}{{ r.get_name() }}{% endif %}
 
 
 {% if r.get_item("meta","description") %}
